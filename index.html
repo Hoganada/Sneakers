@@ -1,254 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sneakers</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<link href="https://fonts.googleapis.com/css2?family=Apple Chancery, cursive&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
 <style>
-    
-    body {
-    border: 5px double #250700;
-    background-image: url("https://pixabay.com/vectors/shoes-footwear-sneakers-fashion-153310/");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;  
-    background-size: cover;
-    margin: auto;
-    font-family: 'Apple Chancery, cursive';
- }
-    
-    .header {
-    color: blue;
-    text-align: center;
-    font-size:30px;
-    margin: 30px;
-    }
-    
-    p {
-    color: #blue;
-    text-align: center;
-    }
-  
- .topnav {
-  overflow: hidden;
-  background-color: blue;
+* {
+  box-sizing: border-box;
 }
 
-.topnav a {
+/* Create four equal columns that floats next to each other */
+.column {
   float: left;
-  color: red;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  width: 25%;
+  padding: 10px;
 }
 
-.topnav a:hover {
-  background-color: white;
-  color: black;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.topnav a.active {
-  background-color: white;
-  color: #FFC300 ;
-}
-
-.topnav-right {
-  float: right;
-}
-
-
-    
-.row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-bottom: 40px;
-  margin-right: 80px;
-}
-.column1 {
-  display: flex;
-  flex-direction: column;
-  flex: 50%;
-  border: 1px solid black;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: 5px;
-  margin-top: 30px;
-  column-width: 100px;
-  text-align: center;
-  height: 300px;
-  color: #FFC300;
-}
-    .column2 {
-  display: flex;
-  flex-direction: column;
-  flex: 50%;
-  border: 1px solid black;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: 5px;
-  margin-top: 30px;
-  column-width: 100px;
-  text-align: center;
-  height: 300px;
-  background-image:url("https://cdn.pixabay.com/photo/2020/07/15/18/26/footwear-5408643__340.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
   }
-    
-    .row2 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-bottom: 40px;
-  margin-right: 80px;
- }
-     .column1 {
-  display: flex;
-  flex-direction: column;
-  flex: 50%;
-  border: 1px solid black;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: 5px;
-  margin-top: 30px;
-  column-width: 100px;
-  text-align: center;
-  height: 300px;
-  background-image:url("https://cdn.pixabay.com/photo/2020/09/17/06/28/sneakers-5578127__340.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  }
-   .column2 {
-  display: flex;
-  flex-direction: column;
-  flex: 50%;
-  border: 1px solid black;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: 5px;
-  margin-top: 30px;
-  column-width: 100px;
-  text-align: center;
-  height: 300px;
-  background-image:url("https://cdn.pixabay.com/photo/2018/09/24/13/33/sneakers-3699954__340.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  }
-    
-     .row3 {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-bottom: 40px;
-  margin-right: 80px;
- }
-     .column1 {
-  display: flex;
-  flex-direction: column;
-  flex: 50%;
-  border: 1px solid black;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: 5px;
-  margin-top: 30px;
-  column-width: 100px;
-  text-align: center;
-  height: 300px;
-  background-image:url("https://cdn.pixabay.com/photo/2018/09/30/21/29/sneakers-3714730__340.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  }
-   .column2 {
-  display: flex;
-  flex-direction: column;
-  flex: 50%;
-  border: 1px solid black;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: 5px;
-  margin-top: 30px;
-  column-width: 100px;
-  text-align: center;
-  height: 300px;
-  background-image:url("https://cdn.pixabay.com/photo/2018/09/24/13/33/sneakers-3699954__340.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  }
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
-  .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0%;
-  width: 100%;
-  padding: 14px 16px;
-  background-color:blue;
-  text-align: center;
 }
 
-    
-  </style>
-  
-  
-  
- <body>
-   
-<div class="header">
-  <h1>Sneakers</h1>
-    <p><em>Sneaker Heads</em></p>
-</div>
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <div class="topnav-right">
-    <a href="#search">Search</a>
-    <a href="#about">About</a>
+<h2>Mixed Column Layout</h2>
+<p>Resize the browser window to see the responsive effect (the columns will re-arrange its layout from four to two on screens that are less than 900px wide. <b>However</b>, on screens that are less than 600px wide, the columns will stack on top of each other instead of floating next to each other.)</p>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+  <h2>Column 1</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+  <h2>Column 2</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+  <h2>Column 3</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+  <h2>Column 4</h2>
+  <p>Some text..</p>
+  </div>
+     <div class="column" style="background-color:#eee;">
+  <h2>Column 3</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#fff;">
+  <h2>Column 4</h2>
+  <p>Some text..</p>
   </div>
 </div>
-
-     
- <div class="row">
-  <div class="column1" style="background-color:transparent;">
-      <h2><u>"Facts"</u></h2>
-    <p>"Fact 1</p>
-    <p>"Fact 2</p>
-    <p>"Fact 3</p>
-    <p>"Fact 4</p>
-    
-
-  </div>
-  <div class="column2" style="background-color:transparent;">
-    <h2>Information</h2>
-    <p>Information</p>
-    <p>Information</p>
-    <p>Information</p>
-    <p>Information</p>
-    
-  </div>
-</div>
-     
-<div class="footer">
-  <p>Sneakerheads2023</p>
-</div>   
-
 
 </body>
-
-
 </html>
